@@ -12,7 +12,7 @@ A random successor of the current state is generated.
 
 If the number of pairs of queens checking each other is more than the successor (father worse) the state changes to the successor, Otherwise the move is only taken by the following chance:
 
-e^((currentFitness – successorFitness-0.1)/T)
+$e^((currentFitness – successorFitness-0.1)/T)$
 
 
 Where T is initially set as 0.1 and decreased -0.0001 by each move.
